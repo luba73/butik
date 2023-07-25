@@ -1,0 +1,44 @@
+.footer {
+    background-color: $bg;
+    margin: 120px 0;
+  
+    &__content {
+        display: flex;
+        padding: 120px 105px 60px 105px;
+    }
+    &__left {
+        
+        margin-right: 150px;
+    }
+    &__header {
+        @include font(600, 28px, $black);
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        letter-spacing: 0.28px;
+        text-transform: capitalize;
+    }
+    &__text {
+        @include font(400, 15px, $black 160%);
+        opacity: 0.8;
+    }
+    &__services {
+        max-height: 135px;
+    }
+    &__service {
+        @include font(400, 17px, $orange);
+        letter-spacing: -0.232px;
+        margin-bottom: 20px;
+    }
+   
+    &__right {
+        width: 60%;
+        margin-bottom: 120px;
+     &__map {
+        width: 400px;
+        height: 400px;
+     }
+    
+    }
+
+
+}
