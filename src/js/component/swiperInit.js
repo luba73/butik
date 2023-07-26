@@ -7,7 +7,26 @@ const swiper = new Swiper('.swiper', {
     spaceBetween: 35,
     effect: 'slide',
 
-
+breakpoints: {
+  310:{
+    slidesPerView: 1,
+  },
+  556:{
+    slidesPerView: 1,
+  },
+  765:{
+    slidesPerView: 2,
+  },
+  998:{
+    slidesPerView: 2,
+  },
+  1240:{
+    slidesPerView: 3,
+  },
+  1440:{
+    slidesPerView: 3,
+  },
+},
   
     // Navigation arrows
     navigation: {
@@ -26,13 +45,33 @@ const swiper = new Swiper('.swiper', {
     loop:true,
     spaceBetween: 39,
     effect: 'slide',
-  
+    
+    breakpoints: {
+      310:{
+        slidesPerView: 1,
+      },
+      556:{
+        slidesPerView: 1,
+      },
+      765:{
+        slidesPerView: 2,
+      },
+      998:{
+        slidesPerView: 2,
+      },
+      1240:{
+        slidesPerView: 3,
+      },
+      1440:{
+        slidesPerView: 3,
+      },
+    },
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-
+   
   });
 
   

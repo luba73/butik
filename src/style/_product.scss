@@ -77,7 +77,7 @@
             right: 0px;
             &::after {
                 content: '';
-                background-image: url(../images/arrow.svg);
+                background-image: url(./images/arrow.svg);
                 background-repeat: no-repeat;
                 background-size: contain;
                 width: 26px;
@@ -94,7 +94,7 @@
             left:0px;
             &::after {
                 content: '';
-                background-image: url(../images/arrow.svg);
+                background-image: url(./images/arrow.svg);
                 background-repeat: no-repeat;
                 background-size: contain;
                 width: 26px;

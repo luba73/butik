@@ -6,6 +6,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            margin-top: 590px;
         }
     }
 
@@ -30,14 +31,18 @@
         position: relative;
         padding: 0 20px;
     }
-    &__wrapper {
-        padding-bottom: 220px;
-    }
+ 
     &__slide {
         border-radius: 18px;
         background-repeat: no-repeat;
         background-size: 100%;
         flex-basis: 31.2%;
+        @media screen and (width<998px){
+            flex-basis: 48.2%;
+          }
+          @media screen and (width<556px){
+            flex-basis: 100%;
+          }
         min-height: 476px;
         display: flex;
         align-items: flex-end;
@@ -45,83 +50,73 @@
         box-shadow: 0px 10px 15px -5px $grey;
         
         &_1 {
-            background-image: url(../images/pigam-1.jpg);
+            background-image: url(../images/pigam-16.jpg);
         }
         &_2 {
-            background-image: url(../images/pigam-2.jpg);
+            background-image: url(../images/pigam-24.jpg);
         }
         &_3 {
             background-image: url(../images/pigam-3.jpg);
         }
-            &_1 {
+            &_4 {
                 background-image: url(../images/pigam-5.jpg);
             }
-            &_2 {
+            &_5{
                 background-image: url(../images/pigam-6.jpg);
             }
-            &_3 {
+            &_6 {
                 background-image: url(../images/pigam-7.jpg);
             }
-            &_2 {
+            &_7 {
                 background-image: url(../images/pigam-8.jpg);
             }
-                &_1 {
-                    background-image: url(../images/pigam-1.jpg);
-                }
-                &_2 {
-                    background-image: url(../images/pigam-2.jpg);
-                }
-                &_3 {
-                    background-image: url(../images/pigam-3.jpg);
-                }
-                &_1 {
+               
+                &_8 {
                     background-image: url(../images/pigam-9.jpg);
                 }
-                &_2 {
+                &_9 {
                     background-image: url(../images/pigam-10.jpg);
                 }
-                &_3 {
+                &_10 {
                     background-image: url(../images/pigam-11.jpg);
                 }
-                    &_1 {
+                    &_11 {
                         background-image: url(../images/pigam-13.jpg);
                     }
-                    &_2 {
+                    &_12 {
                         background-image: url(../images/pigam-14.jpg);
                     }
-                    &_3 {
+                    &_13 {
                         background-image: url(../images/pigam-15.jpg);
                     }
-                        &_1 {
+                        &_14 {
                             background-image: url(../images/pigam-17.jpg);
                         }
-                        &_2 {
+                        &_15 {
                             background-image: url(../images/pigam-18.jpg);
                         }
-                        &_3 {
+                        &_16 {
                             background-image: url(../images/pigam-19.jpg);
                         }
-                            &_1 {
+                            &_17 {
                                 background-image: url(../images/pigam-21.jpg);
                             }
-                            &_2 {
+                            &_18 {
                                 background-image: url(../images/pigam-22.jpg);
                             }
-                            &_3 {
+                            &_19 {
                                 background-image: url(../images/pigam-23.jpg);
                             }
-                                &_1 {
+                                &_20 {
                                     background-image: url(../images/pigam-25.jpg);
                                 }
-                                &_2 {
+                                &_21 {
                                     background-image: url(../images/pigam-31.jpg);
                                 }
-                                &_3 {
+                                &_22 {
                                     background-image: url(../images/pigam-32.jpg);
                                 }
-                                &_content {
-                                    background-image: url(../images/pigam-33.jpg);
-                                    }
+                               
                                     
             background-repeat: no-repeat;
             background-size: 100%;
@@ -137,10 +132,10 @@
             img {
                 width: 250px;
                 height: 400px;
+                display: none;
                 margin-bottom: 13px;
                 box-shadow: 0px 5px 15px lightgray;
                 border-radius: 50%
-                
             }
 
            
@@ -164,15 +159,15 @@
         text-align: center;
         max-height: 100px;
         overflow: auto;
+        background-color: &white;
+        padding: 10px;
     }
 
     &__stars {
         margin-bottom: 0;
     }
 
-    &__star:last-child {
-        opacity: 0.5;
-    }
+  
     &__arrow {
         top: 36%;
     }

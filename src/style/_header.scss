@@ -11,10 +11,16 @@
        display: flex;
        align-items: center;
        justify-content: space-between;
+       @media screen and (max-width: 1240px){
+        padding: 40px 90px;
+      }
     }
     &__logo {
         width: 150px;
         height: 70px;
+        @media screen and (max-width:765px){
+            margin-left: 40%;
+          }
     }
 
     &__dropMenu {
@@ -24,6 +30,9 @@
     &__nav {
         display: flex;
         justify-content: space-between;
+        @media screen and (max-width:765px){
+            opacity: 0;
+          }
         span {
             margin-right: 65px;
             @include font(400, 18px, $white)
@@ -80,37 +89,18 @@
 
     }
 &__link {
+    @media screen and (max-width:765px){
+        opacity: 0;
+      }
+        
+    }
+  
 
-    &__addres {
-        width: 400px;
-        height: 210px;
-        @include font(400, 24px, $black, 160%);
-        text-align: center;
-       padding: 20px;
-       border: 1px solid $orange;
-     
-    }
 
-}
-&__addres {
-   position: relative;
-   display: block;
-    .header__link__addres {
-    position: absolute;
-    top: 30px;
-    left: 0;
-    opacity: 0;
-    z-index: -1;
-    transition: all 0.4s ease-in;
-    }
-}
-&__addres:hover {
-    .header__link__addres {
-        z-index: 1;
-        opacity: 1;
-    }
-    // color: #000;
-}
+
+  
+
+
 
     &__link:not(:last-child) {
         margin-right: 65px;

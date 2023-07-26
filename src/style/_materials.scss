@@ -6,9 +6,21 @@
         margin: 0 auto;
         max-width: 1440px;
         padding-left: 60px;
+        @media screen and (width<556px){
+          flex-direction: column;
+        }
     }
     &__left {
         max-width: 40%;
+        @media screen and (width<1240px){
+          max-width: 30%; 
+        }
+        @media screen and (width<998px){
+          max-width: 50%; 
+        }
+        @media screen and (width<556px){
+          max-width: 98%; 
+        }
     }
     &__right {
         padding-left: 60px;
@@ -16,17 +28,6 @@
         flex-direction: column;
         flex-wrap: wrap;
         max-height: 1010px;
-        // position: relative;
-        // &::before {
-        //     content: '';
-        //     position: absolute;
-        //     width: 49%;
-        //     height: 60px;
-        //     border-top-left-radius: 20px;
-        //     background-color: $bg;
-        //     top: 84px;
-        //     left: 100%;
-        // }
     }
     &__img-1 {
      padding-bottom: 45px;
@@ -34,43 +35,12 @@
      border-radius: 14.25px;
      object-fit: contain;
      position: relative;
-     //&_blur {
-       // position: absolute;
-      /*  &::after{
-        content: '';*/
-            // width: 176px;
-            // height: 30px;
-            // bottom: 30px;
-            // flex-shrink: 0;
-            // border-radius: 29px;
-            // opacity: 0.5;
-            // z-index: -1;
-            // background: url(../images/shadow-1.png);
-            // background: no-repeat;
-           
-       // }
      }
-    
     
     &__img-2 {
         padding-right: 45px;
         border-radius: 14.25px;
         object-fit: contain;
-        // position: relative;
-        // &_blur {
-        //    position: absolute;
-        //  /*  &::after{
-        //    content: '';*/
-        //        width: 176px;
-        //        height: 30px;
-        //        bottom: 30px;
-        //        flex-shrink: 0;
-        //        border-radius: 29px;
-        //        opacity: 0.5;
-        //        z-index: -1;
-        //        background: url(../images/shadow-1.png);
-        //        background: no-repeat;
-             
            }
         
     
@@ -78,30 +48,11 @@
         margin-top: 140px;
         object-fit: contain;
          border-radius: 20px;
-        
+         
+         @media screen and (max-width:998px){
+          display: none; 
+        }
         }
   
-      // &__shadow-1 {
-        //position: absolute;
-        //width: 176px;
-//height: 183px;
-//flex-shrink: 0;
-//border-radius: 29px;
-//opacity: 0.5;
-//background: url(../images/shadow-1.png);
-//background: gray;
-//bottom: 295px;
-//left: 10%;
-// background-repeat: no-repeat;
-//filter: blur(25px);
-  //      width: 100%;
-    //    height: 50px;
-      // }
-      // &__shadow-2 {
-      //  position: absolute;
-       // width: 100%;
-       // height: 100px;
-       // filter: blur(25px);
-      // }
-      
+   
 }

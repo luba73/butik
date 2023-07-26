@@ -5,10 +5,17 @@
     &__content {
         display: flex;
         padding: 120px 105px 60px 105px;
+        @media screen and (max-width:765px){
+            flex-direction: column;
+            padding: 0;
+        }
     }
     &__left {
         
         margin-right: 150px;
+        @media screen and (max-width:556px){
+            margin: 0;
+        }
     }
     &__header {
         @include font(600, 28px, $black);
@@ -20,6 +27,10 @@
     &__text {
         @include font(400, 15px, $black 160%);
         opacity: 0.8;
+        margin-right: 150px;
+        @media screen and (max-width:556px){
+            @include font(400, 21px, $black 160%);
+        }
     }
     &__services {
         max-height: 135px;

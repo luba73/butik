@@ -8,24 +8,46 @@
     &__header {
         @include font(600, 42px, $black, 130%);
         flex-basis: 15%;
+        align-self: end;
+        @media screen and (width<1240px){
+            font-size: 38px; 
+          }
+          @media screen and (width<998px){
+            display: none; 
+          }
     }
     &__list {
         display: flex;
         justify-content: space-between;
         flex-basis: 75%;
+        @media screen and (max-width:998px){
+            flex-basis: 90%;
+            margin-left: 5%;
+          }
+          @media screen and (max-width:998px){
+            flex-direction: column;
+            margin-left: 5%;
+          }
     }
     &__item {
         flex-basis: 31%;
     }
-    &__subHeader {
+    &__supHeader {
         @include font(700, 34px);
-       
         margin-bottom: 20px;
+        @media screen and (width<1240px){
+            font-size: 38px; 
+          }
+          @media screen and (width<556px){
+            color: $orange; 
+          }
     }
     &__text {
         @include font(700, 16px, $black, 185%);
-    
        margin-bottom: 40px;
+       @media screen and (width<1240px){
+        font-size: 30px; 
+      }
     }
     &__link {
         display: flex;
@@ -38,6 +60,13 @@
             transition: all 0.4s ease-in;
             transform: translateX(5px);
         }
+        @media screen and (width<1240px){
+            font-size: 26px; 
+          }
+          @media screen and (width<998px){
+            @include font(600, 22px, $black); 
+            
+          }
         &:hover {
             svg {
                 transform: translateX(25px);
