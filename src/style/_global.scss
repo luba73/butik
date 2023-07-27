@@ -19,9 +19,15 @@ a {
 .container {
     max-width: 1280px;
     margin: 0 auto;
-}
+
 @media screen and (max-width:556px){
     .container {
         max-width: 456px;
   }
+  @media screen and (max-width: 410px){
+    .container {
+        max-width: 300px;
+  }
+}
+}
 }

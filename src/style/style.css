@@ -44,12 +44,17 @@ a {
   max-width: 1280px;
   margin: 0 auto;
 }
-
 @media screen and (max-width: 556px) {
-  .container {
+  .container .container {
     max-width: 456px;
   }
 }
+@media screen and (max-width: 556px) and (max-width: 410px) {
+  .container .container {
+    max-width: 300px;
+  }
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -568,6 +573,11 @@ a {
     left: 150px;
   }
 }
+@media screen and (width < 400px) {
+  .exp__left {
+    display: none;
+  }
+}
 .exp__img {
   border-radius: 50%;
   border: 2px solid rgb(197, 25, 91);
@@ -687,6 +697,11 @@ a {
   }
 }
 @media screen and (width < 556px) {
+  .test__slide {
+    flex-basis: 100%;
+  }
+}
+@media screen and (width < 310px) {
   .test__slide {
     flex-basis: 100%;
   }

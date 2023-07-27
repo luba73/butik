@@ -28,6 +28,9 @@
             top: 260px;
             left: 150px;
           }
+          @media screen and (width<400px){
+            display: none; 
+          }
     }
     &__img {
         border-radius: 50%;

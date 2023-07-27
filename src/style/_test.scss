@@ -43,6 +43,10 @@
           @media screen and (width<556px){
             flex-basis: 100%;
           }
+          @media screen and (width<310px){
+            flex-basis: 100%;
+          }
+
         min-height: 476px;
         display: flex;
         align-items: flex-end;
